@@ -1,11 +1,39 @@
 <html>
     <head>
         <meta name = "Description" content = "Netflix clone only for the purpose of demonstrtation" />
-
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0" />  
         <link rel = "stylesheet" href = "Src/StyleSheet1.css" />
-        <script src = "Src/index.js"></script>
+        <link rel="stylesheet"
+         href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+         crossorigin="anonymous"
+        />
     </head>
+
     <body>
-        Stream now!
+        <header>
+            <nav class = "navbar">
+                <div class ="navbar__brand">
+                    <img src = "https://www.freepnglogos.com/uploads/netflix-logo-0.png" 
+                    alt = "logo_img" class = "brand__logo" />
+                </div>
+                <div class = "navbar__nav__items">
+                    <div class = "nav__item">
+                        <div class = "dropdown__container">
+                            <i class="fas fa-globe"></i>
+                            <select name = "languages" id = "languageSelect" class = "languages__dropdown">
+                                <option value = "English" selected>English</option>
+                                <option value = "Malayalam">Malayalam</option>
+                                <option value = "Spanish">Spanish</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class = "nav__item">
+                        <button class = "button__signIn">Sign In</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script src = "Src/index.js"></script>
     </body>
 </html>
